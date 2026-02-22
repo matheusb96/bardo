@@ -7,6 +7,8 @@ require 'pastel'
 
 module Bardo
   class CLI < Thor
+    package_name 'bardo'
+
     def self.exit_on_failure?
       true
     end

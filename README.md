@@ -6,24 +6,53 @@ Se voce toca ha anos mas ainda depende de cola para improvisar, o Bardo é pra v
 
 ## Instalacao
 
-Requer Ruby >= 3.0.
-
 ```bash
 git clone https://github.com/matheusbarbosa/bardo.git
 cd bardo
-bundle install
 ```
 
-## Uso rapido
+O script `bin/bardo` detecta automaticamente o seu ambiente:
+
+### Com Ruby (>= 3.0)
 
 ```bash
-bundle exec ruby bin/bardo <comando>
+bundle install
+bin/bardo help
+```
+
+### Com Docker (sem Ruby)
+
+Se voce nao tem Ruby instalado, basta ter Docker. Na primeira execucao a imagem e construida automaticamente:
+
+```bash
+bin/bardo help    # build automatico na primeira vez
+bin/bardo improv A
+```
+
+Para rebuild manual (apos atualizar o projeto):
+
+```bash
+docker build -t bardo .
+```
+
+### Como funciona
+
+O `bin/bardo` e um shell script que:
+
+1. Se Ruby esta disponivel, roda direto (mais rapido)
+2. Se nao, usa Docker (faz build automatico na primeira vez)
+3. Se nenhum dos dois esta instalado, mostra instrucoes
+
+Voce nao precisa se preocupar com qual caminho esta sendo usado - o comando e sempre o mesmo:
+
+```bash
+bin/bardo <comando>
 ```
 
 Para ver todos os comandos:
 
 ```bash
-bundle exec ruby bin/bardo help
+bin/bardo help
 ```
 
 ---

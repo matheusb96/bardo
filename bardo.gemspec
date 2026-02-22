@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
 
   spec.files = Dir['lib/**/*', 'bin/*', 'LICENSE', 'README.md']
   spec.bindir = 'bin'
-  spec.executables = ['bardo']
+  spec.executables = %w[bardo bardo-cli]
 
   spec.add_dependency 'pastel', '~> 0.8'
   spec.add_dependency 'thor', '~> 1.3'

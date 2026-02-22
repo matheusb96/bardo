@@ -1,0 +1,8 @@
+.git
+.rspec
+spec/
+tmp/
+README.md
+LICENSE
+Dockerfile
+.dockerignore
