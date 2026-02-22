@@ -2,7 +2,7 @@
 
 CLI para guitarristas e violonistas que querem dominar teoria musical e improvisacao.
 
-Se voce toca ha anos mas ainda depende de cola para improvisar, o Bardo e pra voce. Ele te mostra campo harmonico, escalas, voicings de acorde pelo braco inteiro, e ainda te ensina teoria musical do zero com um sistema de progressao tipo RPG.
+Se voce toca ha anos mas ainda depende de cola para improvisar, o Bardo é pra voce. Ele te mostra campo harmonico, escalas, visualizações de acorde pelo braço inteiro, e ainda te ensina teoria musical do zero com um sistema de progressao tipo RPG.
 
 ## Instalacao
 
